@@ -1,0 +1,264 @@
+@import url(./swiper-bundle.min.css);
+@import url(./bootstrap.min.css);
+@import url(./aos.css);
+@import url(./fonts/YekanBakh/fontface.css);
+/* basics */
+:root {
+  --primary: #361907;
+  --bs-primary-rgb: 54, 25, 7;
+  --bs-btn-active-bg: 65, 33, 13;
+}
+html,
+body {
+  font-family: Yekan;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 8px;
+  height: 0;
+}
+::-webkit-scrollbar-track {
+  background: white;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+}
+.ls-wide {
+  letter-spacing: 2.5px;
+}
+.list-discount li {
+  font-size: 25px;
+  color: white;
+}
+.list-discount li span {
+  color: #b11116;
+  font-weight: bolder;
+}
+/* header */
+.gift-header {
+  left:350px;
+  bottom: 10px;
+  opacity: 0.6;
+  }
+.swiper-slide p,
+.text-shadow-white,
+.list-discount li {
+  line-height: 1.25;
+  
+}
+.discount article:nth-child(2):before {
+  content: url(../assets/Pomegranate-v1.png);
+  position: absolute;
+  right: -50px;
+  top: calc(50% - 69px);
+}
+.discount article,
+.banner {
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+}
+.discount article.col-lg-3 {
+  background: url(../assets/card-bg-quarter.webp);
+}
+.discount article.half {
+  background: url(../assets/card-bg-half.webp);
+}
+.discount article.full {
+  background: url(../assets/card-bg-full.webp);
+}
+/* .discount article.carousel-full {
+  background-size: cover !important;
+  background: url(../assets/carosel-bg.webp);
+} */
+.ghotbnama {
+  animation: ghotbnama 20s linear infinite;
+  bottom: 20px;
+}
+.naghus:before {
+  position: absolute;
+  display: block;
+  left: -150px;
+  top: -150px;
+  content: url(../assets/Naghoos.png);
+}
+.wave {
+  background: url(../assets/Wave.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.banner-box img {
+  width: 100%;
+  object-fit: scale-down;
+}
+/* animations */
+@keyframes ghotbnama {
+to {
+      transform: rotate(1turn);
+  }
+}
+/* media queries */
+@media  screen and (min-width:769px) {
+  .carosel-bg{
+    left: 50%;
+    transform: translateX(-50%);
+}
+  .banner {
+    background: url(../assets/banner-bg.webp);
+    min-height: 300px;
+  }
+  main {
+    padding-bottom: 70px;
+    padding-top: 25px;
+    /* min-height: 4000px; */
+    background-color: black !important;
+    background: url("../assets/Bargeh.webp");
+  }
+  /* Common styles for all slides */
+.swiper-slide .line-drawer img {
+  height: auto !important;
+    bottom: 0 !important;
+    top: 0 !important;
+    margin: auto;
+  max-width: 100%;
+  transition: clip-path 1.5s ease-out;
+}
+.swiper-slide .text-drawer {
+  opacity: 0;
+  transition: opacity 0.7s ease-out 0.7s;
+}
+.swiper-slide.visible-item .text-drawer,
+.swiper-slide.swiper-slide-visible .text-drawer{
+opacity: 1;
+}
+
+/* Initial state for the first three slides */
+.swiper-slide:nth-child(n+3) .line-drawer img {
+  clip-path: polygon(0 0, 0 0, 0% 0%, 0% 0%);
+}
+
+/* Final state for the first three slides */
+.swiper-slide:nth-child(n+3).visible-item .line-drawer img,
+.swiper-slide:nth-child(n+3).swiper-slide-visible .line-drawer img {
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+}
+
+/* Initial state for slides after the fourth slide */
+.swiper-slide:nth-child(n+5) .line-drawer img {
+  clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+}
+
+/* Final state for slides after the fourth slide */
+.swiper-slide:nth-child(n+5).visible-item .line-drawer img,
+.swiper-slide:nth-child(n+5).swiper-slide-visible .line-drawer img {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+/* Final state for slides after the third slide */
+.swiper-slide:nth-child(n+4).visible-item .line-drawer img,
+.swiper-slide:nth-child(n+4).swiper-slide-visible .line-drawer img {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+/* Special handling for the fifth slide */
+.swiper-slide:nth-child(n+5).line-drawer img {
+  clip-path: polygon(100% 0, 100% 0, 100% 0, 100% 0);
+}
+
+/* Final state for the fifth slide */
+.swiper-slide:nth-child(n+5).visible-item .line-drawer img,
+.swiper-slide:nth-child(n+5).swiper-slide-visible .line-drawer img {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+
+.swiper-container {
+  background: url("../assets/landing-BG.webp");
+  background-position: center !important;
+  max-height: 100vh !important;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+main {
+  background-size: 100% 100%;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+}
+@media  screen and (max-width:768px) {
+  body {
+     background-color: black !important;
+    background-image: url(../assets/body.png);
+    background-size: contain !important;
+    background-position: top center;
+  }
+  header {
+    background-image: url(../assets/header.png);
+    background-color: black !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: top center;
+  }
+  main {
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: top !important;
+    background-image: url(../assets/body.png);
+    
+  }
+  .mobile-header {
+background: url("../assets/map-bg-responsive.png");
+background-size: contain !important;
+background-repeat: no-repeat !important;
+background-position: top !important;
+  }
+  .discount article.full,
+  .discount article.half {
+    min-height: 230px !important;
+    background-image: url(../assets/card-bg-quarter.webp);
+  }
+  footer {
+    background-size: cover !important;
+    background-color: black !important;
+    background-repeat: no-repeat !important;
+    background-position: bottom center !important;
+    background: url("../assets/Footer.png");
+  }
+}
+@media (min-width:992px) and (max-width:1300px){
+  .Pomegranate {
+    width: 150px!important;
+  }
+  .discount article:nth-child(2):before{
+    width: 150px !important;
+  }
+}
+@media (max-width: 993px) {
+  .discount article.col-lg-3,
+  .discount article.half,
+  .discount article.full,
+  .discount article.carousel-full {
+    min-height: 230px;
+  }
+}
+@media (max-width: 769px) and (max-width: 992px) {
+  .discount article.half {
+    min-height: 230px;
+    background-image: url(../assets/card-bg-quarter.webp);
+  }
+}
+@media (min-width: 994px) {
+  .discount article.col-lg-3 {
+    min-height: 230px;
+  }
+  .discount article.half {
+    min-height: 400px;
+  }
+  .discount article.full {
+    min-height: 400px;
+  }
+  .discount article.carousel-full {
+    min-height: 475px;
+  }
+}
