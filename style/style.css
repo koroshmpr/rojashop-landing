@@ -64,7 +64,6 @@ main {
 .naghus:before {
     position: absolute;
     display: block;
-    left: -150px;
     top: -150px;
     content: url('../assets/Naghoos.png');
 }
@@ -205,6 +204,9 @@ main {
     }
 
     @media (max-width: 993px) {
+        .naghus:before {
+            left: -80px!important;
+        }
         main {
             padding-top: 120px;
         }
@@ -239,6 +241,9 @@ main {
     }
 
     @media (min-width: 993px) {
+        .naghus:before {
+            left: -150px;
+        }
         .gift-header {
             left: 350px;
             bottom: 10px;
