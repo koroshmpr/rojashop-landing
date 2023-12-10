@@ -41,26 +41,11 @@ body {
     color: #b11116;
     font-weight: bolder;
 }
-
-/* header */
-.gift-header {
-    left: 350px;
-    bottom: 10px;
-    opacity: 0.6;
-}
-
 .swiper-slide p,
 .text-shadow-white,
 .list-discount li {
     line-height: 1.25;
 
-}
-
-.discount article:nth-child(2):before {
-    content: url(../assets/Pomegranate-v1.png);
-    position: absolute;
-    right: -50px;
-    top: calc(50% - 69px);
 }
 
 .discount article,
@@ -112,19 +97,35 @@ body {
 }
 
 /* animations */
-@keyframes ghotbnama {
+    @keyframes ghotbnama {
     to {
         transform: rotate(1turn);
     }
-}
-@media screen and (max-width: 576px) {
+    }
+/* media queries */
+    @media screen and (max-width: 576px) {
+    .discount article.full {
+        min-height: 230px !important;
+        background-image: url(../assets/card-bg-quarter.webp);
+    }
     .mobile-header {
         background-size: contain !important;
         min-height: auto !important;
     }
 }
-    /* media queries */
+
     @media screen and (min-width: 769px) {
+        .gift-header {
+            left: 350px;
+            bottom: 10px;
+            opacity: 0.6;
+        }
+        .discount article:nth-child(2):before {
+            content: url(../assets/Pomegranate-v1.png);
+            position: absolute;
+            right: -50px;
+            top: calc(50% - 69px);
+        }
         .carosel-bg {
             left: 50%;
             transform: translateX(-50%);
@@ -219,46 +220,33 @@ body {
     }
 
     @media screen and (max-width: 768px) {
-        body {
-            background-color: black !important;
-            background-image: url(../assets/body.png);
-            background-size: contain !important;
-            background-position: top center;
-        }
-
-        header {
-            background-image: url(../assets/header.png);
-            background-color: black !important;
-            background-repeat: no-repeat !important;
-            background-size: cover !important;
-            background-position: top center;
-        }
-
-        main {
-            background-size: contain !important;
-            background-repeat: no-repeat !important;
-            background-position: top !important;
-            background-image: url(../assets/body.png);
-
-        }
-
         .mobile-header {
             background: url("../assets/map-bg-responsive.png");
-            min-height: 2230px;
+            min-height: 2530px;
             background-size: cover;
             background-repeat: no-repeat !important;
             background-position: top !important;
         }
-
-        .discount article.full,
+        .gift-header {
+            left: 0;
+            bottom: 10px;
+            opacity: 0.6;
+        }
+        body , footer , header  {
+            background-color: black!important;
+        }
+        body {
+            background-image: url('../assets/body.png');
+            background-size: contain !important;
+            background-position: top center;
+        }
         .discount article.half {
             min-height: 230px !important;
-            background-image: url(../assets/card-bg-quarter.webp);
+            background-image: url('../assets/card-bg-quarter.webp');
         }
 
         footer {
-            background-size: cover !important;
-            background-color: black !important;
+            background-size: 93% !important;
             background-repeat: no-repeat !important;
             background-position: bottom center !important;
             background: url("../assets/Footer.png");
@@ -269,17 +257,34 @@ body {
         .Pomegranate {
             width: 150px !important;
         }
-
         .discount article:nth-child(2):before {
             width: 150px !important;
         }
     }
-
-    @media (max-width: 992px) {
+    @media (max-width: 993px) {
+        main {
+            background: url("../assets/body.png");
+            background-repeat-x: no-repeat !important;
+            background-size: contain;
+            background-position: top !important;
+        }
+        .mobile-header {
+            background: url("../assets/map-bg-responsive.png");
+            /*min-height: 2530px;*/
+            background-size: contain;
+            background-repeat: no-repeat !important;
+            background-position: top !important;
+        }
+        header {
+            background-image: url('../assets/header.png');
+            background-repeat: no-repeat !important;
+            background-color: black;
+            background-size: cover !important;
+            background-position: top center;
+        }
         .Pomegranate, .discount article:nth-child(2):before {
             width: 120px !important;
         }
-
         .discount article.col-lg-3,
         .discount article.half,
         .discount article.full,
@@ -288,10 +293,10 @@ body {
         }
     }
 
-    @media (max-width: 769px) and (max-width: 992px) {
+    @media (min-width: 769px) and (max-width: 993px) {
         .discount article.half {
             min-height: 230px;
-            background-image: url(../assets/card-bg-quarter.webp);
+            background-image: url('../assets/bg-small-size.png');
         }
     }
 
@@ -300,14 +305,10 @@ body {
             min-height: 230px;
         }
 
-        .discount article.half {
+        .discount article.half,
+        .discount article.full{
             min-height: 400px;
         }
-
-        .discount article.full {
-            min-height: 400px;
-        }
-
         .discount article.carousel-full {
             min-height: 475px;
         }
