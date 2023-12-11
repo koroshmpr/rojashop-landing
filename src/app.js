@@ -1,47 +1,5 @@
-function lineDrawer(id) {
-    // Get the path element and its length
-    const svgElement = document.getElementById(id);
-    if (!svgElement) {
-        console.error(`Element with ID ${id} not found.`);
-        return;
-    }
-
-    // Find the first path element within the SVG
-    const pathElement = svgElement.querySelector('path.st1'); // Adjust the selector based on your SVG structure
-    if (!pathElement) {
-        console.error(`No path element found within the SVG.`);
-        return;
-    }
-
-    const pathLength = pathElement.getTotalLength();
-
-    // Set the initial styles
-    pathElement.style.strokeDasharray = pathLength;
-    pathElement.style.strokeDashoffset = pathLength;
-
-    // Update stroke-dashoffset as the user scrolls
-    window.addEventListener('scroll', function () {
-        // Calculate the scroll percentage
-        const scrollPercentage = (window.scrollY - svgElement.getBoundingClientRect().top) / (svgElement.clientHeight - window.innerHeight);
-
-        // Update stroke-dashoffset based on the scroll percentage
-        const dashOffsetValue = pathLength * (1 - scrollPercentage);
-        pathElement.style.strokeDashoffset = Math.max(0, dashOffsetValue);
-    });
-}
-
-// Call lineDrawer when the window is loaded
-window.addEventListener('load', function () {
-    // lineDrawer('Layer_1');
-  
-    // Optionally, you can use window.scrollTo to scroll to a specific position after the window is loaded
-    // Example: Scroll to the top of the document
-    window.scrollTo(0, 0);
-});
-
 document.addEventListener('DOMContentLoaded', function () {
     AOS.init();
- 
       const swiper = new Swiper('.swiper.mainSlider', {
         direction: 'vertical',
         effect: 'fade',

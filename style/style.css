@@ -32,12 +32,14 @@ body {
 .ls-wide {
     letter-spacing: 2.5px;
 }
+
 .discount article,
 .banner {
     background-size: contain !important;
     background-repeat: no-repeat !important;
     background-position: center !important;
 }
+
 main {
     background-color: black !important;
     background: url("../assets/Bargeh.webp");
@@ -45,6 +47,7 @@ main {
     background-position: top;
     background-repeat-x: no-repeat;
 }
+
 .discount article.col-lg-3 {
     background: url('../assets/card-bg-quarter.webp');
 }
@@ -61,6 +64,7 @@ main {
     animation: ghotbnama 20s linear infinite;
     bottom: 20px;
 }
+
 .naghus:before {
     position: absolute;
     display: block;
@@ -77,187 +81,197 @@ main {
     width: 100%;
     object-fit: scale-down;
 }
+
 /* animations */
-    @keyframes ghotbnama {
+@keyframes ghotbnama {
     to {
         transform: rotate(1turn);
     }
-    }
+}
+
 /* media queries */
-    @media (max-width: 576px) {
+@media (max-width: 576px) {
     .discount article.full {
         min-height: 230px !important;
         background-image: url('../assets/card-bg-quarter.webp');
     }
+
     .mobile-header {
         background-size: contain !important;
         min-height: auto !important;
     }
 }
 
-    @media (min-width: 768px) {
-        .discount article:nth-child(2):before {
-            content: url('../assets/Pomegranate-v1.webp');
-            position: absolute;
-            right: -50px;
-            top: calc(50% - 69px);
-        }
-        .carosel-bg {
-            left: 50%;
-            transform: translateX(-50%);
-        }
-
-        .banner {
-            background: url('../assets/banner-bg.webp');
-            min-height: 300px;
-        }
-
-        /* Common styles for all slides */
-        .swiper-slide .line-drawer img {
-            height: auto !important;
-            bottom: 0 !important;
-            top: 0 !important;
-            margin: auto;
-            max-width: 100%;
-            transition: clip-path 1.5s ease-out;
-        }
-
-        .swiper-slide .text-drawer {
-            opacity: 0;
-            transition: all 0.7s ease-out 0.7s;
-        }
-
-        .swiper-slide.visible-item .text-drawer,
-        .swiper-slide.swiper-slide-visible .text-drawer {
-            opacity: 1;
-        }
-
-        /* Initial state for the first three slides */
-        .swiper-slide:nth-child(n+3) .line-drawer img {
-            clip-path: polygon(0 0, 0 0, 0% 0%, 0% 0%);
-        }
-
-        /* Final state for the first three slides */
-        .swiper-slide:nth-child(n+3).visible-item .line-drawer img,
-        .swiper-slide:nth-child(n+3).swiper-slide-visible .line-drawer img {
-            clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
-        }
-
-        /* Initial state for slides after the fourth slide */
-        .swiper-slide:nth-child(n+5) .line-drawer img {
-            clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
-        }
-
-        /* Final state for slides after the fourth slide */
-        .swiper-slide:nth-child(n+5).visible-item .line-drawer img,
-        .swiper-slide:nth-child(n+5).swiper-slide-visible .line-drawer img {
-            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-        }
-
-        /* Final state for slides after the third slide */
-        .swiper-slide:nth-child(n+4).visible-item .line-drawer img,
-        .swiper-slide:nth-child(n+4).swiper-slide-visible .line-drawer img {
-            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-        }
-
-        /* Special handling for the fifth slide */
-        .swiper-slide:nth-child(n+5).line-drawer img {
-            clip-path: polygon(100% 0, 100% 0, 100% 0, 100% 0);
-        }
-
-        /* Final state for the fifth slide */
-        .swiper-slide:nth-child(n+5).visible-item .line-drawer img,
-        .swiper-slide:nth-child(n+5).swiper-slide-visible .line-drawer img {
-            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-        }
-
-
-        .swiper-container {
-            background: url("../assets/landing-BG.webp");
-            background-position: center !important;
-            max-height: 100vh !important;
-            background-size: 100%;
-            background-repeat: no-repeat;
-        }
+@media (min-width: 768px) {
+    .discount article:nth-child(2):before {
+        content: url('../assets/Pomegranate-v1.webp');
+        position: absolute;
+        right: -50px;
+        top: calc(50% - 69px);
     }
 
-    @media (max-width: 768px) {
-        .mobile-header {
-            background: url("../assets/map-bg-responsive.png");
-            background-size: cover;
-            background-repeat: no-repeat !important;
-            background-position: top !important;
-        }
-        .discount article.half {
-            min-height: 230px !important;
-            background-image: url('../assets/card-bg-quarter.webp');
-        }
+    .carosel-bg {
+        left: 50%;
+        transform: translateX(-50%);
     }
 
-    @media (min-width: 993px) and (max-width: 1300px) {
-        .Pomegranate {
-            width: 150px !important;
-        }
-        .discount article:nth-child(2):before {
-            width: 150px !important;
-        }
+    .banner {
+        background: url('../assets/banner-bg.webp');
+        min-height: 300px;
     }
 
-    @media (max-width: 993px) {
-        .naghus:before {
-            left: -80px!important;
-        }
-        main {
-            padding-top: 120px;
-        }
-        .gift-header {
-            left: 0;
-            bottom: 10px;
-            opacity: 0.6;
-        }
-        .mobile-header {
-            background: url("../assets/map-bg-responsive.png");
-            /*min-height: 2530px;*/
-            background-size: contain;
-            background-repeat: no-repeat !important;
-            background-position: top !important;
-        }
-        .Pomegranate, .discount article:nth-child(2):before {
-            width: 120px !important;
-        }
-        .discount article.col-lg-3,
-        .discount article.half,
-        .discount article.full,
-        .discount article.carousel-full {
-            min-height: 230px;
-        }
+    /* Common styles for all slides */
+    .swiper-slide .line-drawer img {
+        height: auto !important;
+        bottom: 0 !important;
+        top: 0 !important;
+        margin: auto;
+        max-width: 100%;
+        transition: clip-path 1.5s ease-out;
     }
 
-    @media (min-width: 768px) and (max-width: 993px) {
-        .discount article.half {
-            min-height: 230px;
-            background-image: url('../assets/bg-small-size.png');
-        }
+    .swiper-slide .text-drawer {
+        opacity: 0;
+        transition: all 0.7s ease-out 0.7s;
     }
 
-    @media (min-width: 993px) {
-        .naghus:before {
-            left: -150px;
-        }
-        .gift-header {
-            left: 350px;
-            bottom: 10px;
-            opacity: 0.6;
-        }
-        .discount article.col-lg-3 {
-            min-height: 230px;
-        }
-
-        .discount article.half,
-        .discount article.full{
-            min-height: 400px;
-        }
-        .discount article.carousel-full {
-            min-height: 475px;
-        }
+    .swiper-slide.visible-item .text-drawer,
+    .swiper-slide.swiper-slide-visible .text-drawer {
+        opacity: 1;
     }
+
+    /* Initial state for the first three slides */
+    .swiper-slide:nth-child(n+3) .line-drawer img {
+        clip-path: polygon(0 0, 0 0, 0% 0%, 0% 0%);
+    }
+
+    /* Final state for the first three slides */
+    .swiper-slide:nth-child(n+3).visible-item .line-drawer img,
+    .swiper-slide:nth-child(n+3).swiper-slide-visible .line-drawer img {
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+    }
+
+    /* Initial state for slides after the fourth slide */
+    .swiper-slide:nth-child(n+5) .line-drawer img {
+        clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+    }
+
+    /* Final state for slides after the fourth slide */
+    .swiper-slide:nth-child(n+5).visible-item .line-drawer img,
+    .swiper-slide:nth-child(n+5).swiper-slide-visible .line-drawer img {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    /* Final state for slides after the third slide */
+    .swiper-slide:nth-child(n+4).visible-item .line-drawer img,
+    .swiper-slide:nth-child(n+4).swiper-slide-visible .line-drawer img {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    /* Special handling for the fifth slide */
+    .swiper-slide:nth-child(n+5).line-drawer img {
+        clip-path: polygon(100% 0, 100% 0, 100% 0, 100% 0);
+    }
+
+    /* Final state for the fifth slide */
+    .swiper-slide:nth-child(n+5).visible-item .line-drawer img,
+    .swiper-slide:nth-child(n+5).swiper-slide-visible .line-drawer img {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+
+    .swiper-container {
+        background: url("../assets/landing-BG.webp");
+        background-position: center !important;
+        max-height: 100vh !important;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+}
+
+@media (max-width: 768px) {
+    .mobile-header {
+        background: url("../assets/map-bg-responsive.png");
+        background-size: cover;
+        background-repeat: no-repeat !important;
+        background-position: top !important;
+    }
+
+    .discount article.half {
+        min-height: 230px !important;
+        background-image: url('../assets/card-bg-quarter.webp');
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1300px) {
+    .Pomegranate , .discount article:nth-child(2):before {
+        width: 150px !important;
+    }
+}
+
+@media (max-width: 993px) {
+    .naghus:before {
+        left: -80px !important;
+    }
+
+    main {
+        padding-top: 120px;
+    }
+
+    .gift-header {
+        left: 0;
+        bottom: 10px;
+        opacity: 0.6;
+    }
+
+    .mobile-header {
+        background: url("../assets/map-bg-responsive.png");
+        /*min-height: 2530px;*/
+        background-size: contain;
+        background-repeat: no-repeat !important;
+        background-position: top !important;
+    }
+
+    .Pomegranate, .discount article:nth-child(2):before {
+        width: 120px !important;
+    }
+
+    .discount article.col-lg-3,
+    .discount article.half,
+    .discount article.full,
+    .discount article.carousel-full {
+        min-height: 230px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 993px) {
+    .discount article.half {
+        min-height: 230px;
+        background-image: url('../assets/bg-small-size.png');
+    }
+}
+
+@media (min-width: 993px) {
+    .naghus:before {
+        left: -150px;
+    }
+
+    .gift-header {
+        left: 350px;
+        bottom: 10px;
+        opacity: 0.6;
+    }
+
+    .discount article.col-lg-3 {
+        min-height: 230px;
+    }
+
+    .discount article.half,
+    .discount article.full {
+        min-height: 400px;
+    }
+
+    .discount article.carousel-full {
+        min-height: 475px;
+    }
+}
