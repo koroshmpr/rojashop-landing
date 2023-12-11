@@ -124,7 +124,7 @@ main {
 
         .swiper-slide .text-drawer {
             opacity: 0;
-            transition: opacity 0.7s ease-out 0.7s;
+            transition: all 0.7s ease-out 0.7s;
         }
 
         .swiper-slide.visible-item .text-drawer,
