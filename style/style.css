@@ -47,19 +47,6 @@ main {
     background-position: top;
     background-repeat-x: no-repeat;
 }
-
-.discount article.col-lg-3 {
-    background: url('../assets/card-bg-quarter.webp');
-}
-
-.discount article.half {
-    background: url('../assets/card-bg-half.webp');
-}
-
-.discount article.full {
-    background: url('../assets/card-bg-full.webp');
-}
-
 .ghotbnama {
     animation: ghotbnama 20s linear infinite;
     bottom: 20px;
@@ -79,7 +66,7 @@ main {
 
 .banner-box img {
     width: 100%;
-    object-fit: scale-down;
+    object-fit: contain;
 }
 
 /* animations */
@@ -88,29 +75,16 @@ main {
         transform: rotate(1turn);
     }
 }
-
-/* media queries */
-@media (max-width: 576px) {
-    .discount article.full {
-        min-height: 230px !important;
-        background-image: url('../assets/card-bg-quarter.webp');
-    }
-
-    .mobile-header {
-        background-size: contain !important;
-        min-height: auto !important;
-    }
-}
-
 @media (min-width: 768px) {
-    .discount article:nth-child(2):before {
+    .gifts article:nth-child(2):before {
         content: url('../assets/Pomegranate-v1.webp');
         position: absolute;
-        right: -50px;
+        right: -120px;
         top: calc(50% - 69px);
+        z-index: -1;
     }
 
-    .carosel-bg {
+    .carousel-bg {
         left: 50%;
         transform: translateX(-50%);
     }
@@ -188,21 +162,6 @@ main {
         background-repeat: no-repeat;
     }
 }
-
-@media (max-width: 768px) {
-    .mobile-header {
-        background: url("../assets/map-bg-responsive.png");
-        background-size: cover;
-        background-repeat: no-repeat !important;
-        background-position: top !important;
-    }
-
-    .discount article.half {
-        min-height: 230px !important;
-        background-image: url('../assets/card-bg-quarter.webp');
-    }
-}
-
 @media (min-width: 993px) and (max-width: 1300px) {
     .Pomegranate , .discount article:nth-child(2):before {
         width: 150px !important;
@@ -213,64 +172,39 @@ main {
     .naghus:before {
         left: -80px !important;
     }
-
     main {
         padding-top: 120px;
     }
-
     .gift-header {
         left: 0;
         bottom: 10px;
         opacity: 0.6;
     }
-
     .mobile-header {
         background: url("../assets/map-bg-responsive.png");
-        /*min-height: 2530px;*/
         background-size: contain;
         background-repeat: no-repeat !important;
         background-position: top !important;
     }
-
     .Pomegranate, .discount article:nth-child(2):before {
         width: 120px !important;
     }
-
-    .discount article.col-lg-3,
-    .discount article.half,
-    .discount article.full,
-    .discount article.carousel-full {
-        min-height: 230px;
-    }
 }
-
 @media (min-width: 768px) and (max-width: 993px) {
-    .discount article.half {
-        min-height: 230px;
-        background-image: url('../assets/bg-small-size.png');
-    }
 }
-
 @media (min-width: 993px) {
     .naghus:before {
         left: -150px;
     }
-
     .gift-header {
         left: 350px;
         bottom: 10px;
         opacity: 0.6;
     }
-
-    .discount article.col-lg-3 {
-        min-height: 230px;
-    }
-
     .discount article.half,
     .discount article.full {
         min-height: 400px;
     }
-
     .discount article.carousel-full {
         min-height: 475px;
     }

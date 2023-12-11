@@ -147,45 +147,53 @@
         </div>
     </section>
     <!-- discounts -->
-    <section class="container p-5 p-lg-0 position-relative">
+    <section class="container p-3 p-lg-0 position-relative">
         <div class="row justify-content-md-between justify-content-center gy-3 gx-2 discount">
-            <h2 class="text-center pb-3  heading col-12 position-relative fw-bold">
+            <h2 class="text-center pb-3 mb-5 heading col-12 position-relative fw-bold">
                 <img class="position-absolute start-50 top-50 translate-middle" width="300"
                      src="./assets/heading-border.webp" alt="heading frame"/>
                 تخفیف‌های ویژه
             </h2>
-            <article class="half col-md-6 pe-md-2 row" data-aos="fade-left">
-                <a aria-label="discount products" href="https://rojashop.com/" target="_blank"
-                   class="rounded-2 banner-box p-5">
-                    <img src="./assets/products/Promotion.webp" alt="product">
-                </a>
-            </article>
-            <article class="half col-md-6 ps-md-2 row" data-aos="fade-right">
-                <a aria-label="discount products" href="https://rojashop.com/" target="_blank"
-                   class="rounded-2 banner-box p-5">
-                    <img src="./assets/products/Promotion.webp" alt="product">
-                </a>
-            </article>
-            <img width="50" class="col-1 position-absolute bottom-0 start-0 opacity-75" src="./assets/Shark.png"
+            <a aria-label="discount products"
+               href="https://rojashop.com/landing/40percent?utm_campaign=yalda1402&utm_medium=banner40&utm_source=roja"
+               target="_blank"
+               class="half col-md-6 row banner-box" data-aos="fade-left">
+                <picture>
+                    <source media="(min-width: 992px)" srcset="./assets/products/40percent.webp">
+                    <source media="(max-width: 991px)" srcset="./assets/products/40percent-mobile.webp">
+                    <img class="img-fluid" src="./assets/products/40percent.webp" alt="40 percent discount">
+                </picture>
+            </a>
+            <a aria-label="discount products"
+               href="https://rojashop.com/landing/50percent?utm_campaign=yalda1402&utm_medium=banner50&utm_source=roja"
+               target="_blank"
+               class="half col-md-6 row banner-box mt-4 mt-lg-0" data-aos="fade-right">
+                <picture>
+                    <source media="(min-width: 992px)" srcset="./assets/products/50percent.webp">
+                    <source media="(max-width: 991px)" srcset="./assets/products/50percent-mobile.webp">
+                    <img class="img-fluid" src="./assets/products/50percent.webp" alt="50 percent discount">
+                </picture>
+            </a>
+            <img width="50" class="col-1 position-absolute top-100 start-0 opacity-50" src="./assets/Shark.png"
                  alt="shark">
         </div>
     </section>
     <!-- carousel -->
-    <section class="position-relative">
-        <div class="container">
-            <img class="carosel-bg position-absolute h-100 px-lg-4" src="./assets/carosel-bg.webp" alt="">
+    <section class="container position-relative my-5 pt-lg-5">
+            <img class="carousel-bg position-absolute h-100 w-100" src="./assets/carosel-bg.webp"
+                 alt="carousel background">
             <div class="row justify-content-md-between justify-content-center pe-5 pe-lg-0 discount wave">
                 <article
                         class="carousel-full d-flex flex-wrap gap-3 col-12 my-5 p-lg-0 p-3 rounded-2 justify-content-center z-2">
-                    <div class="title col-5 col-md-4 py-4 py-lg-0 ps-lg-5 gap-3 fw-bolder position-relative d-flex flex-column align-items-end justify-content-center text-lg-start text-center">
+                    <div class="title col-5 col-md-3 py-4 py-lg-0 ps-lg-5 gap-3 fw-bolder position-relative d-flex flex-column align-items-end justify-content-center text-lg-start text-center">
                         <h3 class="text-dark fs-2" data-aos="zoom-in">پیشنهاد روژایی</h3>
                         <a aria-label="Roja shop page" data-aos="zoom-in"
-                           class="btn bg-primary text-white col-lg-5 col-md-8 col-12 mt-2" href="https://rojashop.com/">مشاهده
+                           class="btn bg-primary text-white col-lg-5 col-md-8 col-12 mt-2" href="https://rojashop.com/onsales">مشاهده
                             همه</a>
                         <img class="position-absolute top-100 d-none d-lg-inline translate-middle-y end-0" width="220"
-                             src="./assets/Hat.webp" alt=""/>
+                             src="./assets/Hat.webp" alt="straw hat"/>
                     </div>
-                    <div class="col-6 col-md swiper slider">
+                    <div class="col-6 col-md-7 col-md swiper slider overflow-hidden">
                         <div class="swiper-wrapper">
                             <!-- slider items goes here
                             note : you can duplicate the swiper-slide items for more slides
@@ -213,73 +221,101 @@
                     </div>
                 </article>
             </div>
-        </div>
     </section>
     <!-- gifts -->
-    <section class="container p-5 px-lg-0 position-relative">
-        <div class="row justify-content-md-between justify-content-center gy-3 gx-2 discount">
+    <section class="container p-3 px-lg-0 position-relative">
+        <div class="row justify-content-md-around justify-content-center gy-3 gx-2 discount gifts">
             <h2 class="text-center pb-3 mb-5 heading col-12 position-relative fw-bold">
-                <img class="position-absolute gift-header d-none d-sm-inline" src="./assets/half-bottle.png" alt="">
+                <img class="position-absolute gift-header d-none d-sm-inline" src="./assets/half-bottle.png" alt="bottle">
                 <img class="position-absolute start-50 top-50 translate-middle" width="300"
                      src="./assets/heading-border.webp" alt="heading border"/>
                 مناسب هدیه
             </h2>
-            <article class="banner-box col-lg-3 col-md-6 pe-md-2 row" data-aos="fade-up">
+            <article class="banner-box col-lg-3 col-md-6 row px-0" data-aos="fade-up">
                 <!-- add banner image and links here  -->
-                <a aria-label="discount products" href="https://rojashop.com/" target="_blank" class="rounded-2 p-3">
-                    <img src="./assets/products/Promotion.webp" alt="gifts">
+                <a aria-label="discount products"
+                   href="https://rojashop.com/landing/40percent?utm_campaign=yalda1402&utm_medium=banner40&utm_source=roja"
+                   target="_blank">
+                    <img class="w-100" src="./assets/products/gift-01.webp" alt="gifts">
                 </a>
             </article>
-            <article class="banner-box col-lg-3 col-md-6 px-md-2 row" data-aos="fade-up">
+            <article class="banner-box col-lg-3 col-md-6 row px-0" data-aos="fade-up">
                 <!-- add banner image and links here  -->
-                <a aria-label="discount products" href="https://rojashop.com/" target="_blank" class="rounded-2 p-3">
-                    <img src="./assets/products/Promotion.webp" alt="gifts">
+                <a aria-label="discount products"
+                   href="https://rojashop.com/shop/electronic-appliances?onstock=true&order=sale&utm_campaign=yalda1402&utm_medium=banner2&utm_source=roja"
+                   target="_blank">
+                    <img src="./assets/products/gift-02.webp" alt="gifts">
                 </a>
 
             </article>
-            <article class="banner-box col-lg-3 col-md-6 px-md-2 row" data-aos="fade-up">
+            <article class="banner-box col-lg-3 col-md-6 row px-0" data-aos="fade-up">
                 <!-- add banner image and links here  -->
-                <a aria-label="discount products" href="https://rojashop.com/" target="_blank" class="rounded-2 p-3">
-                    <img src="./assets/products/Promotion.webp" alt="gifts">
+                <a aria-label="discount products"
+                   href="https://rojashop.com/shop/fragrances/eudoclon?onstock=true&order=sale&utm_campaign=yalda1402&utm_medium=banner3&utm_source=roja"
+                   target="_blank">
+                    <img src="./assets/products/gift-03.webp" alt="gifts">
                 </a>
             </article>
-            <article class="banner-box col-lg-3 col-md-6 ps-md-2 row position-relative" data-aos="fade-up">
+            <article class="banner-box col-lg-3 col-md-6 row position-relative px-0" data-aos="fade-up">
                 <img width="200" class="Pomegranate col-4 position-absolute start-50 top-100 translate-middle d-md-none"
                      src="./assets/Pomegranate-banner.webp" alt="Pomegranate">
-                <!-- add banner image and links here  -->
-                <a aria-label="discount products" href="https://rojashop.com/" target="_blank" class="rounded-2 p-3">
-                    <img src="./assets/products/Promotion.webp" alt="gifts">
+                <a aria-label="discount products"
+                   href="https://rojashop.com/landing/products-for-men?utm_campaign=yalda1402&utm_medium=banner4&utm_source=roja"
+                   target="_blank">
+                    <img src="./assets/products/gift-04.webp" alt="gifts">
                 </a>
             </article>
         </div>
     </section>
-    <!-- full banner -->
-    <section class="container p-5 px-lg-0 position-relative">
+    <!-- first buy banner -->
+    <section class="container p-3 px-lg-0 mb-lg-5 position-relative">
         <div class="row justify-content-md-between justify-content-center gy-3 gx-2 discount">
-            <article class="full col-lg-12 mb-5 px-lg-2 row position-relative mx-auto" data-aos="fade-down">
+            <article class="full col-lg-12 mt-5 my-lg-5 row position-relative mx-auto" data-aos="fade-down">
                 <img class="col-lg-3 col-md-4 col-6 position-absolute top-100 translate-middle-y d-none d-lg-inline"
                      width="120" src="./assets/sword.webp" alt="sword"/>
                 <img width="200" class="Pomegranate col-2 position-absolute start-0 top-50 translate-middle"
                      src="./assets/Pomegranate-banner.webp" alt="Pomegranate">
-                <a aria-label="producst banner" href="https://rojashop.com/" target="_blank"
-                   class="rounded-2 banner-box d-flex justify-content-end align-items-center p-lg-5">
-                    <img src="./assets/products/full-banner.webp" alt="gifts">
+                <a aria-label="first buy link"
+                   href="https://rojashop.com/first-purchase?utm_campaign=yalda1402&utm_medium=banner-fp&utm_source=roja"
+                   target="_blank"
+                   class="rounded-2 banner-box d-flex justify-content-center align-items-center">
+                    <picture>
+                        <source media="(min-width: 992px)" srcset="./assets/products/first-buy.webp">
+                        <source media="(max-width: 991px)" srcset="./assets/products/first-buy-mobile.webp">
+                        <img class="img-fluid" src="./assets/products/first-buy.webp" alt="first buy">
+                    </picture>
                 </a>
             </article>
-            <article class="half col-lg-6 pe-md-2 row mt-lg-5 position-relative" data-aos="fade-left">
+        </div>
+    </section>
+    <!--snap pay and yalda banner-->
+    <section class="container p-3 px-lg-0 position-relative my-5">
+        <div class="row justify-content-md-between justify-content-center gy-3 gx-2 discount">
+            <article class="half col-lg-6 row position-relative" data-aos="fade-left">
                 <img width="200" class="w-auto position-absolute end-0 bottom-0 d-none d-lg-inline"
                      src="./assets/bottle.webp" alt="bottle">
-                <a aria-label="producst banner" href="https://rojashop.com/" target="_blank"
-                   class="rounded-2 banner-box p-lg-5">
-                    <img src="./assets/products/Promotion.webp" alt="product">
+                <a aria-label="snap pay discount"
+                   href="https://rojashop.com/shop?onstock=true&order=sale&utm_campaign=yalda1402&utm_medium=banner-shop&utm_source=roja"
+                   target="_blank" class="rounded-2 banner-box">
+                    <picture>
+                        <source media="(min-width: 992px)" srcset="./assets/products/snap-pay.webp">
+                        <source media="(max-width: 991px)" srcset="./assets/products/snap-pay-mobile.webp">
+                        <img class="img-fluid" src="./assets/products/snap-pay.webp" alt="snap pay">
+                    </picture>
                 </a>
             </article>
-            <article class="half naghus col-lg-6 ps-md-2 row mt-lg-5" data-aos="fade-right">
+
+            <article class="half naghus col-lg-6 row mt-5 mt-lg-0" data-aos="fade-right">
                 <img width="200" class="Pomegranate w-auto position-absolute start-50 bottom-0 translate-middle-x"
                      src="./assets/Pomegranate-banner.webp" alt="naghus">
-                <a aria-label="producst banner" href="https://rojashop.com/" target="_blank"
-                   class="rounded-2 banner-box p-lg-5">
-                    <img src="./assets/products/Promotion.webp" alt="products">
+                <a aria-label="yalda red color discount"
+                   href="https://rojashop.com/landing/products-red?utm_campaign=yalda1402&utm_medium=banner-red&utm_source=roja"
+                   target="_blank" class="rounded-2 banner-box">
+                    <picture>
+                        <source media="(min-width: 992px)" srcset="./assets/products/red-yalda.webp">
+                        <source media="(max-width: 991px)" srcset="./assets/products/red-yalda-mobile.webp">
+                        <img class="img-fluid" src="./assets/products/red-yalda.webp" alt="red colors yalda">
+                    </picture>
                 </a>
             </article>
         </div>
@@ -291,11 +327,10 @@
     </div>
     <footer class="row gy-4 pb-md-5 flex-columns justify-content-center">
         <a aria-label="back to main page" class="btn bg-primary text-white col-auto mt-3 fs-5"
-           href="https://rojashop.com/">برگشت به صفحه اول</a>
+           href="https://rojashop.com/" target="_blank">برگشت به صفحه اول</a>
         <a aria-label="Website rojashop"
            class="text-dark fw-bold text-decoration-none text-center pb-5"
-           href="https://rojashop.com/"
-           target="_blank">
+           href="https://rojashop.com/" target="_blank">
             <img width="100" src="./assets/logo-roja.webp" alt="logo"/>
             <div class="small text-dark text-opacity-75 ls-wide">rojashop.com</div>
         </a>
