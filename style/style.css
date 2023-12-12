@@ -49,7 +49,9 @@ main {
 }
 .ghotbnama {
     /*animation: ghotbnama 20s linear infinite;*/
-    animation: compass 3.0s alternate infinite;
+    /*animation: compass 3.0s alternate infinite;*/
+    animation: compass 2.0s ease-in-out alternate infinite;
+    transform-origin: center center;
     bottom: 20px;
 }
 
@@ -78,15 +80,17 @@ main {
 /*}*/
 @keyframes compass {
     0% {
-        transform: scale(1) rotate(0deg);
+        transform: rotate(0deg) translateY(0);
     }
     50% {
-        transform: scale(1) rotate(80deg);
+        transform: rotate(60deg) translateY(-5px);
     }
     100% {
-        transform: scale(1) rotate(-180deg);
+        transform: rotate(-120deg) translateY(0);
     }
 }
+
+
 @media (max-width: 768px) {
     .carousel-bg {
         width: auto;
