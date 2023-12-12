@@ -48,7 +48,8 @@ main {
     background-repeat-x: no-repeat;
 }
 .ghotbnama {
-    animation: ghotbnama 20s linear infinite;
+    /*animation: ghotbnama 20s linear infinite;*/
+    animation: compass 3.0s alternate infinite;
     bottom: 20px;
 }
 
@@ -70,9 +71,20 @@ main {
 }
 
 /* animations */
-@keyframes ghotbnama {
-    to {
-        transform: rotate(1turn);
+/*@keyframes ghotbnama {*/
+/*    to {*/
+/*        transform: rotate(1turn);*/
+/*    }*/
+/*}*/
+@keyframes compass {
+    0% {
+        transform: scale(1) rotate(0deg);
+    }
+    50% {
+        transform: scale(1) rotate(80deg);
+    }
+    100% {
+        transform: scale(1) rotate(-180deg);
     }
 }
 @media (max-width: 768px) {
