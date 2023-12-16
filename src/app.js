@@ -41,14 +41,18 @@ document.addEventListener('DOMContentLoaded', function () {
         direction: 'horizontal',
         effect: 'slide',
         slidesPerView: 1.2,
-        spaceBetween: 10,
+        spaceBetween: 5,
         grabCursor: true,
         autoplay: {
             delay: 3000,
           },
         breakpoints: {
-            768: {
-                slidesPerView: 3,
+            576: {
+                slidesPerView: 2,
+                spaceBetween: 10,
+            },
+            992: {
+                slidesPerView: 4,
             },
         },
         disableOnInteraction: false,

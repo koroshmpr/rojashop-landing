@@ -27,7 +27,7 @@
     <meta name="twitter:image" content="URL to an image for Twitter sharing"/>
 </head>
 <body>
-<header class="d-lg-none d-flex justify-content-center w-100 pt-5 position-absolute">
+<header class="d-lg-none d-flex justify-content-center w-100 pt-3 pt-md-4 pt-lg-5 position-absolute">
     <h1><img class="d-lg-none" width="350" src="./assets/Ribbon-mobile.webp" alt="header title"/></h1>
 </header>
 <main>
@@ -72,11 +72,11 @@
     </section>
     <!-- hero slider -->
     <section class="d-none d-lg-block swiper mainSlider overflow-visible vh-100 swiper-container">
+        <div class="position-absolute d-flex justify-content-center w-100 pt-4 pt-xxl-2">
+            <img width="400" src="./assets/Ribbon.webp" alt="header title"/>
+        </div>
         <img class="position-absolute bottom-0 Pomegranate" data-aos="fade-left" src="assets/Pomegranate-hero.webp"
              alt="Pomegranate">
-        <div class="position-absolute d-flex justify-content-center w-100 pt-4">
-            <img width="500" src="./assets/Ribbon.webp" alt="header title"/>
-        </div>
         <div class="swiper-wrapper fs-4 fw-bold">
             <div class="swiper-slide"></div>
             <div class="swiper-slide">
@@ -180,54 +180,286 @@
         </div>
     </section>
     <!-- carousel -->
-    <section class="container position-relative my-5 pt-lg-5">
-            <img class="carousel-bg position-absolute h-100 top-0" src="./assets/carosel-bg.webp"
-                 alt="carousel background">
-            <div class="row justify-content-md-between justify-content-center pe-5 pe-lg-0 discount wave">
-                <article
-                        class="carousel-full d-flex flex-wrap gap-3 col-12 my-5 p-lg-0 pe-3 ps-0 rounded-2 justify-content-center z-2">
-                    <div class="title col-5 col-md-3 py-4 py-lg-0 ps-lg-5 gap-3 fw-bolder position-relative d-flex flex-column align-items-end justify-content-center text-lg-start text-center">
-                        <h3 class="text-dark fs-2" data-aos="zoom-in">پیشنهاد روژایی</h3>
+    <section class="container position-relative my-5">
+        <img class="carousel-bg position-absolute h-100" src="./assets/carosel-bg.webp"
+             alt="carousel background">
+        <div class="row justify-content-md-between justify-content-center pe-5 pe-lg-0 discount wave">
+            <article
+                    class="carousel-full d-flex flex-wrap gap-3 col-12 my-5 rounded-2 justify-content-center z-2 align-items-center">
+                <div class="title col-6 col-md-3 py-4 py-lg-0 gap-3 h-100 fw-bolder position-relative d-flex flex-column align-items-end justify-content-evenly text-lg-start text-center">
+                    <div>
+                        <h3 class="text-dark fs-2 fw-bolder" data-aos="zoom-in">پیشنهاد روژایی</h3>
                         <a aria-label="Roja shop page" data-aos="zoom-in"
-                           class="btn bg-primary text-white col-lg-5 col-md-8 col-12 mt-2" href="https://rojashop.com/onsales">مشاهده
+                           class="btn bg-primary text-white col-12 mt-2"
+                           href="https://rojashop.com/onsales">مشاهده
                             همه</a>
-                        <img class="position-absolute top-100 d-none d-lg-inline translate-middle-y end-0" width="220"
-                             src="./assets/Hat.webp" alt="straw hat"/>
                     </div>
-                    <div class="col-6 col-md-7 col-md swiper slider overflow-hidden">
-                        <div class="swiper-wrapper">
-                            <!-- slider items goes here
-                            note : you can duplicate the swiper-slide items for more slides
-                            -->
-                            <div class="swiper-slide banner-box d-flex align-items-center">
-                                <img src="./assets/products/Promotion.webp" alt="product">
-                            </div>
-                            <!-- end of slide  -->
-                            <div class="swiper-slide banner-box d-flex align-items-center">
-                                <img src="./assets/products/Promotion.webp" alt="product">
-                            </div>
-                            <div class="swiper-slide banner-box d-flex align-items-center">
-                                <img src="./assets/products/Promotion.webp" alt="product">
-                            </div>
-                            <div class="swiper-slide banner-box d-flex align-items-center">
-                                <img src="./assets/products/Promotion.webp" alt="product">
-                            </div>
-                            <div class="swiper-slide banner-box d-flex align-items-center">
-                                <img src="./assets/products/Promotion.webp" alt="product">
-                            </div>
-                            <div class="swiper-slide banner-box d-flex align-items-center">
-                                <img src="./assets/products/Promotion.webp" alt="product">
-                            </div>
+                    <img class="position-absolute top-100 d-none d-lg-inline translate-middle-y end-0 me-5" width="220"
+                         src="./assets/Hat.webp" alt="straw hat"/>
+                </div>
+                <div class="col-5 col-md-7 col-md swiper slider overflow-hidden">
+                    <div class="swiper-wrapper">
+<!--                        add product slide here ( repeat this section for each product you want add-->
+                        <div class="swiper-slide product-card position-relative">
+                            <a href=""
+                               target="_blank" class="text-decoration-none w-100">
+                                <div class="img-box w-100">
+                                    <img class="lazy product-card-img entered loaded"
+                                         src="./assets/products/Promotion.webp"
+                                         data-src=""
+                                         alt="">
+                                </div>
+                                <div class="d-flex position-absolute top-0 mt-3 h-auto flex-column product-icons">
+                                    <div class="d-flex bg-secondary py-0 px-2 d-flex align-items-center justify-content-center mb-2 rounded-2 discount-percent">
+                                        <span class="text-white text-caption fw-bold">15%</span>
+                                    </div>
+                                </div>
+                                <div class="product-card-title">
+                                    <strong class="text-subtitle-2 text-black fw-normal">شامپو بدن انار 420 میلی لیتر
+                                        شون</strong>
+                                </div>
+                                <div class="description">
+                                    <div class=" pb-1 w-100 h-100 d-flex flex-column align-items-center justify-content-center">
+                                        <div class="d-flex justify-content-center mt-1 align-items-center px-2">
+                                            <div class="d-flex flex-column ms-lg-2 product-card-price align-items-center align-items-md-center justify-content-center">
+                                                <span class="text-secondary text-decoration-line-through text-caption old-price d-flex align-items-center">۸۲,۵۰۰<span
+                                                        class="text-caption-2 ms-1">تومان</span></span>
+                                                <span class="text-primary price text-subtitle-2 d-flex align-items-center">۷۰,۱۲۵<span
+                                                        class="text-caption-2 ms-1">تومان</span></span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+<!--                        ends here -->
+                        <div class="swiper-slide product-card">
+                            <a href=""
+                               target="_blank" class="text-decoration-none w-100">
+                                <div class="img-box w-100">
+                                    <img class="lazy product-card-img entered loaded"
+                                         src="./assets/products/Promotion.webp"
+                                         data-src=""
+                                         alt="">
+                                </div>
+                                <div class="d-flex position-absolute top-0 mt-3 h-auto flex-column product-icons">
+                                    <div class="d-flex bg-secondary py-0 px-2 d-flex align-items-center justify-content-center mb-2 rounded-2 discount-percent">
+                                        <span class="text-white text-caption fw-bold">15%</span>
+                                    </div>
+                                </div>
+                                <div class="product-card-title">
+                                    <strong class="text-subtitle-2 text-black fw-normal">شامپو بدن انار 420 میلی لیتر
+                                        شون</strong>
+                                </div>
+                                <div class="description">
+                                    <div class=" pb-1 w-100 h-100 d-flex flex-column align-items-center justify-content-center">
+                                        <div class="d-flex justify-content-center mt-1 align-items-center px-2">
+                                            <div class="d-flex flex-column ms-lg-2 product-card-price align-items-center align-items-md-center justify-content-center">
+                                                <span class="text-secondary text-decoration-line-through text-caption old-price d-flex align-items-center">۸۲,۵۰۰<span
+                                                        class="text-caption-2 ms-1">تومان</span></span>
+                                                <span class="text-primary price text-subtitle-2 d-flex align-items-center">۷۰,۱۲۵<span
+                                                        class="text-caption-2 ms-1">تومان</span></span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide product-card">
+                            <a href=""
+                               target="_blank" class="text-decoration-none w-100">
+                                <div class="img-box w-100">
+                                    <img class="lazy product-card-img entered loaded"
+                                         src="./assets/products/Promotion.webp"
+                                         data-src=""
+                                         alt="">
+                                </div>
+                                <div class="d-flex position-absolute top-0 mt-3 h-auto flex-column product-icons">
+                                    <div class="d-flex bg-secondary py-0 px-2 d-flex align-items-center justify-content-center mb-2 rounded-2 discount-percent">
+                                        <span class="text-white text-caption fw-bold">15%</span>
+                                    </div>
+                                </div>
+                                <div class="product-card-title">
+                                    <strong class="text-subtitle-2 text-black fw-normal">شامپو بدن انار 420 میلی لیتر
+                                        شون</strong>
+                                </div>
+                                <div class="description">
+                                    <div class=" pb-1 w-100 h-100 d-flex flex-column align-items-center justify-content-center">
+                                        <div class="d-flex justify-content-center mt-1 align-items-center px-2">
+                                            <div class="d-flex flex-column ms-lg-2 product-card-price align-items-center align-items-md-center justify-content-center">
+                                                <span class="text-secondary text-decoration-line-through text-caption old-price d-flex align-items-center">۸۲,۵۰۰<span
+                                                        class="text-caption-2 ms-1">تومان</span></span>
+                                                <span class="text-primary price text-subtitle-2 d-flex align-items-center">۷۰,۱۲۵<span
+                                                        class="text-caption-2 ms-1">تومان</span></span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide product-card">
+                            <a href=""
+                               target="_blank" class="text-decoration-none w-100">
+                                <div class="img-box w-100">
+                                    <img class="lazy product-card-img entered loaded"
+                                         src="./assets/products/Promotion.webp"
+                                         data-src=""
+                                         alt="">
+                                </div>
+                                <div class="d-flex position-absolute top-0 mt-3 h-auto flex-column product-icons">
+                                    <div class="d-flex bg-secondary py-0 px-2 d-flex align-items-center justify-content-center mb-2 rounded-2 discount-percent">
+                                        <span class="text-white text-caption fw-bold">15%</span>
+                                    </div>
+                                </div>
+                                <div class="product-card-title">
+                                    <strong class="text-subtitle-2 text-black fw-normal">شامپو بدن انار 420 میلی لیتر
+                                        شون</strong>
+                                </div>
+                                <div class="description">
+                                    <div class=" pb-1 w-100 h-100 d-flex flex-column align-items-center justify-content-center">
+                                        <div class="d-flex justify-content-center mt-1 align-items-center px-2">
+                                            <div class="d-flex flex-column ms-lg-2 product-card-price align-items-center align-items-md-center justify-content-center">
+                                                <span class="text-secondary text-decoration-line-through text-caption old-price d-flex align-items-center">۸۲,۵۰۰<span
+                                                        class="text-caption-2 ms-1">تومان</span></span>
+                                                <span class="text-primary price text-subtitle-2 d-flex align-items-center">۷۰,۱۲۵<span
+                                                        class="text-caption-2 ms-1">تومان</span></span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide product-card">
+                            <a href=""
+                               target="_blank" class="text-decoration-none w-100">
+                                <div class="img-box w-100">
+                                    <img class="lazy product-card-img entered loaded"
+                                         src="./assets/products/Promotion.webp"
+                                         data-src=""
+                                         alt="">
+                                </div>
+                                <div class="d-flex position-absolute top-0 mt-3 h-auto flex-column product-icons">
+                                    <div class="d-flex bg-secondary py-0 px-2 d-flex align-items-center justify-content-center mb-2 rounded-2 discount-percent">
+                                        <span class="text-white text-caption fw-bold">15%</span>
+                                    </div>
+                                </div>
+                                <div class="product-card-title">
+                                    <strong class="text-subtitle-2 text-black fw-normal">شامپو بدن انار 420 میلی لیتر
+                                        شون</strong>
+                                </div>
+                                <div class="description">
+                                    <div class=" pb-1 w-100 h-100 d-flex flex-column align-items-center justify-content-center">
+                                        <div class="d-flex justify-content-center mt-1 align-items-center px-2">
+                                            <div class="d-flex flex-column ms-lg-2 product-card-price align-items-center align-items-md-center justify-content-center">
+                                                <span class="text-secondary text-decoration-line-through text-caption old-price d-flex align-items-center">۸۲,۵۰۰<span
+                                                        class="text-caption-2 ms-1">تومان</span></span>
+                                                <span class="text-primary price text-subtitle-2 d-flex align-items-center">۷۰,۱۲۵<span
+                                                        class="text-caption-2 ms-1">تومان</span></span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide product-card">
+                            <a href=""
+                               target="_blank" class="text-decoration-none w-100">
+                                <div class="img-box w-100">
+                                    <img class="lazy product-card-img entered loaded"
+                                         src="./assets/products/Promotion.webp"
+                                         data-src=""
+                                         alt="">
+                                </div>
+                                <div class="d-flex position-absolute top-0 mt-3 h-auto flex-column product-icons">
+                                    <div class="d-flex bg-secondary py-0 px-2 d-flex align-items-center justify-content-center mb-2 rounded-2 discount-percent">
+                                        <span class="text-white text-caption fw-bold">15%</span>
+                                    </div>
+                                </div>
+                                <div class="product-card-title">
+                                    <strong class="text-subtitle-2 text-black fw-normal">شامپو بدن انار 420 میلی لیتر
+                                        شون</strong>
+                                </div>
+                                <div class="description">
+                                    <div class=" pb-1 w-100 h-100 d-flex flex-column align-items-center justify-content-center">
+                                        <div class="d-flex justify-content-center mt-1 align-items-center px-2">
+                                            <div class="d-flex flex-column ms-lg-2 product-card-price align-items-center align-items-md-center justify-content-center">
+                                                <span class="text-secondary text-decoration-line-through text-caption old-price d-flex align-items-center">۸۲,۵۰۰<span
+                                                        class="text-caption-2 ms-1">تومان</span></span>
+                                                <span class="text-primary price text-subtitle-2 d-flex align-items-center">۷۰,۱۲۵<span
+                                                        class="text-caption-2 ms-1">تومان</span></span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide product-card">
+                            <a href=""
+                               target="_blank" class="text-decoration-none w-100">
+                                <div class="img-box w-100">
+                                    <img class="lazy product-card-img entered loaded"
+                                         src="./assets/products/Promotion.webp"
+                                         data-src=""
+                                         alt="">
+                                </div>
+                                <div class="d-flex position-absolute top-0 mt-3 h-auto flex-column product-icons">
+                                    <div class="d-flex bg-secondary py-0 px-2 d-flex align-items-center justify-content-center mb-2 rounded-2 discount-percent">
+                                        <span class="text-white text-caption fw-bold">15%</span>
+                                    </div>
+                                </div>
+                                <div class="product-card-title">
+                                    <strong class="text-subtitle-2 text-black fw-normal">شامپو بدن انار 420 میلی لیتر
+                                        شون</strong>
+                                </div>
+                                <div class="description">
+                                    <div class=" pb-1 w-100 h-100 d-flex flex-column align-items-center justify-content-center">
+                                        <div class="d-flex justify-content-center mt-1 align-items-center px-2">
+                                            <div class="d-flex flex-column ms-lg-2 product-card-price align-items-center align-items-md-center justify-content-center">
+                                                <span class="text-secondary text-decoration-line-through text-caption old-price d-flex align-items-center">۸۲,۵۰۰<span
+                                                        class="text-caption-2 ms-1">تومان</span></span>
+                                                <span class="text-primary price text-subtitle-2 d-flex align-items-center">۷۰,۱۲۵<span
+                                                        class="text-caption-2 ms-1">تومان</span></span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide product-card">
+                            <a href=""
+                               target="_blank" class="text-decoration-none w-100">
+                                <div class="img-box w-100">
+                                    <img class="lazy product-card-img entered loaded"
+                                         src="./assets/products/Promotion.webp"
+                                         data-src=""
+                                         alt="">
+                                </div>
+                                <div class="d-flex position-absolute top-0 mt-3 h-auto flex-column product-icons">
+                                    <div class="d-flex bg-secondary py-0 px-2 d-flex align-items-center justify-content-center mb-2 rounded-2 discount-percent">
+                                        <span class="text-white text-caption fw-bold">15%</span>
+                                    </div>
+                                </div>
+                                <div class="product-card-title">
+                                    <strong class="text-subtitle-2 text-black fw-normal">شامپو بدن انار 420 میلی لیتر
+                                        شون</strong>
+                                </div>
+                                <div class="description">
+                                    <div class=" pb-1 w-100 h-100 d-flex flex-column align-items-center justify-content-center">
+                                        <div class="d-flex justify-content-center mt-1 align-items-center px-2">
+                                            <div class="d-flex flex-column ms-lg-2 product-card-price align-items-center align-items-md-center justify-content-center">
+                                                <span class="text-secondary text-decoration-line-through text-caption old-price d-flex align-items-center">۸۲,۵۰۰<span
+                                                        class="text-caption-2 ms-1">تومان</span></span>
+                                                <span class="text-primary price text-subtitle-2 d-flex align-items-center">۷۰,۱۲۵<span
+                                                        class="text-caption-2 ms-1">تومان</span></span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
                     </div>
-                </article>
-            </div>
+                </div>
+            </article>
+        </div>
     </section>
     <!-- gifts -->
     <section class="container p-3 px-lg-0 position-relative">
         <div class="row justify-content-md-around justify-content-center gy-3 gx-2 discount gifts">
             <h2 class="text-center pb-3 mb-5 heading col-12 position-relative fw-bold">
-                <img class="position-absolute gift-header d-none d-sm-inline" src="./assets/half-bottle.png" alt="bottle">
+                <img class="position-absolute gift-header d-none d-sm-inline" src="./assets/half-bottle.png"
+                     alt="bottle">
                 <img class="position-absolute start-50 top-50 translate-middle" width="300"
                      src="./assets/heading-border.webp" alt="heading border"/>
                 مناسب هدیه

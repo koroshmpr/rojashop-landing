@@ -5,6 +5,7 @@
 /* basics */
 :root {
     --primary: #361907;
+    --bs-secondary-rgb: 255,9,106;
     --bs-primary-rgb: 54, 25, 7;
     --bs-btn-active-bg: 65, 33, 13;
 }
@@ -47,12 +48,26 @@ main {
     background-position: top;
     background-repeat-x: no-repeat;
 }
+
 .ghotbnama {
-    /*animation: ghotbnama 20s linear infinite;*/
-    /*animation: compass 3.0s alternate infinite;*/
     animation: compass 2.0s ease-in-out alternate infinite;
     transform-origin: center center;
     bottom: 20px;
+}
+.slider .product-card {
+    position:relative;
+    padding: 10px;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.product-card .img-box .product-card-img {
+    object-fit: contain;
+    height: auto;
+    width: 100%;
+    aspect-ratio: 1;
 }
 
 .naghus:before {
@@ -94,8 +109,12 @@ main {
 @media (max-width: 768px) {
     .carousel-bg {
         width: auto;
+        min-height: 450px;
+        transform: translateY(-50%);
+        top: 50%;
     }
 }
+
 @media (min-width: 768px) {
     .gifts article:nth-child(2):before {
         content: url('../assets/Pomegranate-v1.webp');
@@ -178,14 +197,16 @@ main {
 
     .swiper-container {
         background: url("../assets/landing-BG.webp");
-        background-position: center !important;
-        max-height: 100vh !important;
+        background-position: 100% !important;
+        max-height: 95vh !important;
+        max-width: 1600px;
         background-size: 100%;
         background-repeat: no-repeat;
     }
 }
+
 @media (min-width: 993px) and (max-width: 1300px) {
-    .Pomegranate , .discount article:nth-child(2):before {
+    .Pomegranate, .discount article:nth-child(2):before {
         width: 150px !important;
     }
 }
@@ -194,39 +215,48 @@ main {
     .naghus:before {
         left: -80px !important;
     }
+
     main {
         padding-top: 120px;
     }
+
     .gift-header {
         left: 0;
         bottom: 10px;
         opacity: 0.6;
     }
+
     .mobile-header {
         background: url("../assets/map-bg-responsive.png");
         background-size: contain;
         background-repeat: no-repeat !important;
         background-position: top !important;
     }
+
     .Pomegranate, .discount article:nth-child(2):before {
         width: 120px !important;
     }
 }
+
 @media (min-width: 768px) and (max-width: 993px) {
 }
+
 @media (min-width: 993px) {
     .naghus:before {
         left: -150px;
     }
+
     .gift-header {
         left: 350px;
         bottom: 10px;
         opacity: 0.6;
     }
+
     .discount article.half,
     .discount article.full {
         min-height: 400px;
     }
+
     .discount article.carousel-full {
         min-height: 475px;
     }
