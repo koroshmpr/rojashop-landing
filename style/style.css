@@ -5,7 +5,9 @@
 /* basics */
 :root {
     --primary: #361907;
+    --danger : #fe1a1e;
     --bs-secondary-rgb: 255,9,106;
+    --bs-danger-rgb: 254,26,30;
     --bs-primary-rgb: 54, 25, 7;
     --bs-btn-active-bg: 65, 33, 13;
 }
